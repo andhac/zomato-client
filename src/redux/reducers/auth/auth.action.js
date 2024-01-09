@@ -10,7 +10,7 @@ export const signIn = (userData) => async (dispatch) => {
   try {
     const User = await axios({
       method: "POST",
-      url: `https://zomato-server-harsh.herokuapp.com/auth/signin`,
+      url: `https://zomato-server-l9eg.onrender.com/auth/signin`,
       data: { credentials: userData },
     });
 
@@ -31,7 +31,7 @@ export const signUp = (userData) => async (dispatch) => {
   try {
     const User = await axios({
       method: "POST",
-      url: `https://zomato-server-harsh.herokuapp.com/auth/signup`,
+      url: `https://zomato-server-l9eg.onrender.com/auth/signup`,
       data: { credentials: userData },
     });
 

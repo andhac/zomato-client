@@ -7,7 +7,7 @@ export const getUser = (_id) => async (dispatch) => {
   try {
     const User = await axios({
       method: "GET",
-      url: `https://zomato-server-harsh.herokuapp.com/user/${_id}`,
+      url: `https://zomato-server-l9eg.onrender.com/user/${_id}`,
     });
 
     return dispatch({ type: GET_USER, payload: User.data });
@@ -20,7 +20,7 @@ export const getMySelf = () => async (dispatch) => {
   try {
     const User = await axios({
       method: "GET",
-      url: `https://zomato-server-harsh.herokuapp.com/user/`,
+      url: `https://zomato-server-l9eg.onrender.com/user/`,
     });
 
     return dispatch({ type: SELF, payload: User.data });
